@@ -1,4 +1,10 @@
 # FINGERPRINT [FORENSIC]
+---
+> Can You Spoof My Finger Print ???
+
+> Points : 300
+
+---
 
 **We were provided with 7 images which included 6 jpg and 1 png format**. You can find them [HERE](https://github.com/FrigidSec/CTFWriteups/tree/master/ASCWG/fingerprint/_docs/chal_images)
 
