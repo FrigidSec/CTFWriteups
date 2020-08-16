@@ -46,7 +46,7 @@ So the above function is just an xor function which XORs the passed data with pr
 
 ![](https://github.com/FrigidSec/CTFWriteups/blob/master/ASCWG/check/_docs/check/5.png)
 
-yes i have renamed the variables to make it easy to understand..
+yes I have renamed the variables to make it easy to understand..
 
 then the function returns back to main... so let's follow...
 
