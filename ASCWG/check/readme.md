@@ -1,17 +1,10 @@
----
-layout: post
-title: ASCWG CTF Check Writeup  
-tags:
-  - CTF Writeups
-  - CTF
-  - FrigidSec
----
+# CHECK \[REV\]
 
-<div class="message">
-Writeup of Reverse Engineering Challenge of Arab Security Cyber WarGames.
+---
+> Writeup of Reverse Engineering Challenge of Arab Security Cyber WarGames. 
 
-Points : 300
-</div>
+> Points : 300
+---
 
 ### Background
 Just a file `check` with no discription. Who gives discription for reverse challanges anyways?
@@ -26,7 +19,7 @@ First we just did `strings` but found nothing and will see why that's the case w
 
 #### Running for first time
 
-![](/assets/images/check/1.png)
+![](https://github.com/FrigidSec/CTFWriteups/blob/master/ASCWG/check/_docs/check/1.png)
 
 ok that being done let's move to next part.
 
@@ -35,24 +28,23 @@ ok that being done let's move to next part.
 Just searching for the strings `checking machine...` we got our main function.
 
 
-![](/assets/images/check/2.png)
+![](https://github.com/FrigidSec/CTFWriteups/blob/master/ASCWG/check/_docs/check/2.png)
 
 here we can see lots of strings being stored in the stack. okay let's trace more..
 
 
-![](/assets/images/check/3.png)
+![](https://github.com/FrigidSec/CTFWriteups/blob/master/ASCWG/check/_docs/check/3.png)
 
 So now we see some new data being loaded to the stack and then passing at arguments to some function..
 
 
-![](/assets/images/check/4.png)
+![](https://github.com/FrigidSec/CTFWriteups/blob/master/ASCWG/check/_docs/check/4.png)
 
 #### The XOR function
-![]()
 So the above function is just an xor function which XORs the passed data with preset key, in our case `87h` which can be seen here :
 
 
-![](/assets/images/check/5.png)
+![](https://github.com/FrigidSec/CTFWriteups/blob/master/ASCWG/check/_docs/check/5.png)
 
 yes i have renamed the variables to make it easy to understand..
 
@@ -71,7 +63,7 @@ so let's keep this in mind and moveon...
 #### `_getenv` 
 this name is enough to understand what this is trying to do...
 
-![](/assets/images/check/6.png)
+![](https://github.com/FrigidSec/CTFWriteups/blob/master/ASCWG/check/_docs/check/6.png)
 
 So now you see what it does?
 
@@ -179,11 +171,11 @@ print()
 The above script will give you all the enviornment variables and the flag too as it is also XORed lol....
 
 
-![](/assets/images/check/7.png)
+![](https://github.com/FrigidSec/CTFWriteups/blob/master/ASCWG/check/_docs/check/7.png)
 
 and then just export these values in the env. vars to get the flag.
 
-![](/assets/images/check/8.png)
+![](https://github.com/FrigidSec/CTFWriteups/blob/master/ASCWG/check/_docs/check/8.png)
 
 
 #### My FAV binary patching ! (solve in 5 min)
@@ -191,19 +183,19 @@ and then just export these values in the env. vars to get the flag.
 Just see this ... 
 
 
-![](/assets/images/check/9.png)
+![](https://github.com/FrigidSec/CTFWriteups/blob/master/ASCWG/check/_docs/check/9.png)
 
 `74` -> `75` i.e. `JZ` -> `JNZ` just do this in two places and the program will give you all its secrets without any pain...
 
 
-![](/assets/images/check/10.png)
+![](https://github.com/FrigidSec/CTFWriteups/blob/master/ASCWG/check/_docs/check/10.png)
 
 
 Binary patching can be intimidating for some... check these articles out for some idea and how to do it at basic level as you should be good to go for this one. :)
 
-[Use VIM as HEX editor like a boss](/article/2020/08/16/use-VIM-as-HEX-Editor.html)
+[Use VIM as HEX editor like a boss](https://saket-upadhyay.github.io/2020/08/16/use-VIM-as-HEX-Editor.html)
 
-[Taking over a software by Instruction Rewriting.](/article/2019/11/25/Taking-over-a-software-by-Instruction-Rewriting.html)
+[Taking over a software by Instruction Rewriting.](https://saket-upadhyay.github.io/article/2019/11/25/Taking-over-a-software-by-Instruction-Rewriting.html)
 
 
 ### Conclusion 
