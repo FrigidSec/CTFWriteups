@@ -1,5 +1,5 @@
 # is_it_base85(Crypto)
-The file for this challenge u can find it [here](https://github.com/FrigidSec/CTFWriteups/new/master/PhantomCTF/Crypto/is_it_base85)
+The file for this challenge u can find it [here](https://github.com/FrigidSec/CTFWriteups/blob/master/PhantomCTF/Crypto/is_it_base85/is_it_base85)
 
 The name of this challenge suggested that the cipher is base85 encoded. But take a moment to think .. that the organizers would make that look so easy? No !!It is not a Sanity check or welcome challenge!!
 
