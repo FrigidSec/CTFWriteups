@@ -10,6 +10,7 @@ In this challenge, you get asked a question and have 2 radio buttons to click on
 - [x] No
 
 `Submit`
+
 ----
 However, clicking on "Yes" ends up selecting "No". All you had to do was select "Yes" using JavaScript instead of clicking on it. This can be done easily using something like-
 ```javascript
