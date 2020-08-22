@@ -4,7 +4,7 @@
 ---
 Starting off, the description of the challenge suggests that we should start by searching for Acharya Dev, a hacker, on social media. The name is not that unique so a Google search didn't yield good results for us. We decided to check each social media site individually. 
 
-Starting off with Instagram, we search for "Acharya Dev" and came across [this particular account](https://www.instagram.com/acharya_dev_1995/ "this particular account").
+Starting off with Instagram, we searched for "Acharya Dev" and came across [this particular account](https://www.instagram.com/acharya_dev_1995/ "this particular account").
 
 ![](./images/ss1.png)
 
