@@ -4,7 +4,7 @@
 ---
 We were given the following image for this one-
 
-![](./Welcome-note.jpg)
+![](./images/Welcome-note.jpg)
 
 Looks like some sort of ancient symbols. We tried using Google Lens but it didn't give us any relevant results. So next, we turned to the [cryptography section of ctf-katana](https://github.com/JohnHammond/ctf-katana#cryptography "cryptography section of ctf-katana").
  
