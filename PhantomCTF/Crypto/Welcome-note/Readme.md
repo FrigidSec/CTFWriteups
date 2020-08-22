@@ -1,5 +1,5 @@
 # Welcome-note
-The file for this challenge u can find it [here](https://github.com/FrigidSec/CTFWriteups/new/master/PhantomCTF/Crypto)
+The file for this challenge u can find it [here](https://github.com/FrigidSec/CTFWriteups/blob/master/PhantomCTF/Crypto/Welcome-note/Welcome-note.jpg)
 
 We were given an image , the image looked weird!! It looked liked some kind of ancient language..
 We tried to guess the language using **Google Lens** but it miserably failed!! It was also confused as we were...
