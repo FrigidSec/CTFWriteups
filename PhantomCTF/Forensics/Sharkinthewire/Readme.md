@@ -2,7 +2,7 @@
 
 **Description: We intercepted unencrypted com and dont have any guy to analyse it please find for us**
 
-We were given a tar file which had a pcap file inside it. You can find the file [here](https://google.com)
+We were given a tar file which had a pcap file inside it. You can find the file [here](https://github.com/FrigidSec/CTFWriteups/blob/master/PhantomCTF/Forensics/Sharkinthewire/sniffer.pcapng)
 
 **Golden Tip: Don't just fireup wireshark everytime when you have the pcap file. Many challenges can be solved without any Network Packet Analyzer**
 
