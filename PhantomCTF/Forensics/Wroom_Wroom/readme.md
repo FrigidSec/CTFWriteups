@@ -33,8 +33,9 @@ The word file we got was also password protected, so we extracted the hash using
 password : superstar
 
 ![](./_docs/w7.png)
-
+![](./_docs/w8.png)
 ### FLAG 
+![](./_docs/w9.png)
 the contents of the file are not visible as they are white in color just `Ctrl+A` and copy and paste in notepad or change color.
 
 ![](./_docs/wflag.png)
