@@ -5,7 +5,8 @@
 If you think about the description a little bit (never overcomplicate things though) you'll notice that the description sounds like- 
 > "Discord has a bot"
 
-So heading over the Cybsec's Discord server, we find that they have 2 bots in there. One is MEE6 and the other is Dyno
+So heading over the Cybsec's Discord server, we find that they have 2 bots in there. One is MEE6 and the other is Dyno.
+
 Dyno has the prefix`?` and MEE6 has the prefix `!`.
 Let's try asking Dyno for the flag-
 
