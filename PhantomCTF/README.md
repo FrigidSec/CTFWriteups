@@ -1,6 +1,6 @@
 # Phantom CTF 2020
 
-> Duration : 24hrs
+> Duration : 20hrs
 
 > Rank : 10
 
