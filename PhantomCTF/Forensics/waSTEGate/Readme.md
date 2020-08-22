@@ -2,7 +2,7 @@
 
 **Description: A CCTV near a wastegate has captured the image of the hacker behind the twitter scandal. FBI image forensic team has sent you the following attachment. Analyze and find the culprit.**
 
-We were given a zip file which contained a png  file inside it. You can find the file [here](https://google.com)
+We were given a zip file which contained a png  file inside it. You can find the file [here](https://github.com/FrigidSec/CTFWriteups/blob/master/PhantomCTF/Forensics/waSTEGate/fbirecords.zip)
 
 After extracting the png, when we try to open it it popped up error: **Fatal error reading PNG image file : Not a PNG file**
 
