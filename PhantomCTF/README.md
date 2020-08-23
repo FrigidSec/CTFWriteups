@@ -12,6 +12,10 @@
 - Android
   - [HEHE.APK](./Android/hehe) [x64Mayhem]
   
+- Boot2Root
+  - [Aincrad: Foothold](./Boot2Root/Aincrad:%20Foothold) [AviusX]
+  - [Aincrad: User1](./Boot2Root/Aincrad:%20User1) [AviusX]
+  
 - Crypto
   - [SherlocK](./Crypto/SherlocK) [AviusX]
   - [Welcome Note](./Crypto/Welcome%20Note) [AviusX]
