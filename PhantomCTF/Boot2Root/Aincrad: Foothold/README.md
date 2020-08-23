@@ -60,6 +60,8 @@ We can easily get a shell back using something like the following command-
 
 After saving, we have now successfully created a project. Now, when we click on "Build now", we can get the server to execute the shell command we gave it during the creation of the project. Setting up the `nc` listener in advance and clicking "Build now", we have the shell.
 
+![](./images/ss5.jpeg)
+
 Now, we can easily upgrade the shell by using the following command-
 
 ```bash
