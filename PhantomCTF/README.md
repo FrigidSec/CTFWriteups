@@ -1,4 +1,4 @@
-# Phantom CTF 2020
+### PhantomCTF 3.0 (2020)
 
 > Duration : 20hrs
 
