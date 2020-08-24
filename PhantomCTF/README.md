@@ -20,6 +20,7 @@
   - [SherlocK](./Crypto/SherlocK) [AviusX]
   - [Welcome Note](./Crypto/Welcome%20Note) [AviusX]
   - [is_it_base85](./Crypto/is_it_base85) [Mr.PR!M3]
+  - [Is it in ur genes](./Crypto/Is_it_in_ur_genes) [x64mayhem]
   
 - Forensics
   - [Eclipse](./Forensics/Eclipse) [Mr.PR!M3]
@@ -32,6 +33,7 @@
   - [Asuna](./Misc/Asuna) [AviusX]
   - [Dance Monkey](./Misc/Dance%20Monkey) [AviusX]
   - [This cord](./Misc/This%20cord) [AviusX]
+  - [irritate](./Misc/irritate) [x64mayhem]
   
 - OSINT
   - [$root](./OSINT/$root) [AviusX]
