@@ -39,6 +39,9 @@
   - [$root](./OSINT/$root) [AviusX]
   - [Toolkit](./OSINT/Toolkit) [AviusX]
   - [AcharyaDev](./OSINT/AcharyaDev) [AviusX]
+
+- Reverse
+  - [secret](./Reverse/secret) [x64mayhem]
   
 - Web
   - [Base64](./Web/Base64) [AviusX]
