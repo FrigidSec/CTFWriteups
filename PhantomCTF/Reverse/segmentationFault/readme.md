@@ -10,14 +10,19 @@ and when running the binary we get a segmentation fault. which on anaysis seems 
 And this was really easy for me, as i like binary patching and this just needed `2 clean patches` either in `JE` and `JNE` instructions or the imm. value of `MOV` opcode.
 Let's see the CG of the binary :
 
-BEFORE MOD
-![](./_docs/1.png)
-![](./_docs/2.png)
+### BEFORE MOD
 
-AFTER MOD [vim <3 xxd]
+
+![](./_docs/1.png)
 ![](./_docs/3.png)
+
+
+### AFTER MOD [vim <3 xxd]
+
+![](./_docs/2.png)
 ![](./_docs/4.png)
 
+### FLAG
 And running the binary after that gave us the flag, just like that. 
 ![](./_docs/5.png)
 
