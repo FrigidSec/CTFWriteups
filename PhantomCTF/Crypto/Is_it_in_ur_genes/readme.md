@@ -54,4 +54,176 @@ In this challange we are given the following data :
 ### STEP 1
 
 As the chunks are not 7 or 8 bits, these do not seem to be ASCII. 
-Also with the name of the  
+Also with the name of the challenge we can try to decode this as DNA Sequence (AGCT) bases.
+
+This data is in binary, one block contains mapping of two DNA bases as the last block is `11`.
+
+The mappings are :
+
+```
+00 -> A
+01 -> G
+10 -> C
+11 -> T
+```
+### STEP 2
+
+So I created a python script to convert this into above SEQUENCE via file input. the script will read from `data` file and will write the sequence to `dna` file.
+
+
+```python
+## X64MAYHEM
+
+raw=[]
+
+with open("data","r") as file:
+    s=file.readlines()
+    raw=s
+
+data=""
+for i in raw:
+    str=i
+    str=str.strip('\n')
+    # print(str)
+    str=str.split(' ')
+    str.pop()
+    for i in str:
+        r=i[0:2]
+        l=i[2:]
+        print(r+'-'+l)
+        if(r == '00'):
+            data+='A'
+        elif(r == '10'):
+            data+='C'
+        elif(r == '01'):
+            data+='G'
+        elif(r == '11'):
+            data+='T'
+        if(l == '00'):
+            data+='A'
+        elif(l == '10'):
+            data+='C'
+        elif(l == '01'):
+            data+='G'
+        elif(l == '11'):
+            data+='T'
+
+data+='T'
+
+print(data)
+
+with open("dna","w")as file:
+    file.write(data)
+
+```
+
+So we get the following in the dna file :
+
+```
+GAGATCTTGAACAGAATGAGTATGACGCGATTGAAATTGACGACAATCACATTGAGACAGTTGAAATTGCAGACACAACCAACAATCAAGACATTGATGACCTTGATCCCAAAGAGTACAATGCATAGAAATACACAGTTGAGAATCTTGCTCGCTCGGTTGATGCACTTGGGTGCTCGGTTGCATACTAAACATTTGACAATCAAGATGAATACACAGTTGCATACTACATTGCAGCGAATCCATACTACACAGAGACAGTTGATGACCTTGAAATTGACGACAATCACATTGATTCACATGAATCCAAAGCATTTGACAAGACATACTACACACTTGGGTGCTCGGTTGATGCACTTGATTCACATGCATACAAGAATCTTTTTGCTCCCACACAGAATCACGTTGACGACAATCACATTGACACCTATTCACACACAGCAGAGAATGATCTTGCATACTACATTGCTCGCTCGGTTGAGACAGTTGACCAGACACCAGCATTTGAAGATGATTAGAACAAATTTGAGAATCCATATGTTGGGTGCTCGGTTTTTGGTCACTACATTGGGTGCTCGGTTGAAGAAAATCTTGAACACATTGAATAGACACACAAAGCATAGTCGATTGACCCCAATCAAGCATAGAATGATCAAAAGTTTGATGCACTTGAACACATTGCATACTACATTGAGAATCCATACACACATAACAAATAGAAAACATACATTGCATACAATAATTAGTAAACATACATTGACCATGCACTTGAAATTGATTCACATGCATACAAGAATCTTGCATACTAAACATTTGATTACACACACCATGCACATACAGTTGAAATTGACCCCAATCAAGCATAGAATGATCTTTGTCACTACATTGACGACAATCACACATAGAAAGTTGAAGATGAATACATTGAGACAGTTGCATACTACATTGCAGACACATTTGATGACCTTGCACCCAAGTACACAGTTGCCACAGACAAATTTGAACCGATTGAGTAGACCCAGAATCACGTTGAAGACAAGTAGTCAGTTGCATATGTTGCATCACAAAATCCAGAGTAAACATACATTGAGAATCACCATGCACATAAAACATAGAATGATCTTGACAATCAAGATGAATACAAATTTGCCGAGACATACTAGAATCTTGACGACAATCACACATAGAAAGTTGATAAAACATACACACAGAAAAAGTTTGAGAATCCATATGTTGATTCACATGCATACAAGAATCCAGTTTTTGGTCCACAAAATCCAGAGTAAACATAGAATGATCTTGAGACAGTTGAAAAAGAAGATGATAATTAGTAGACAGACTACAAATTTGAACCGATTGCATACTACATTGCACAGAAACATGCAGATGATAACATTGCCGACTAGAAAGACTTTGAGTAGAATCAGGCAGTTGAAAATAAGAATCATGTTGAAAAAGAGAAATCAGTTGAGAATCTTGAAAATCTTGATGCACAATACACACTTGCAGATTACAAAGAGAACCAGAACAAATTTGAACCGATTGATAACACAGCAGACAATCACGACACACTTGGGTGCTCGGTTGCCACAGAGAATCACGTTGCATCACAAAATCCAGACCACACACTTGGGTGCTCGGTTGATAATGAGTACAAAGCCAAGTACACAGTTGCATATGTTGAAGAAACACCACCGATTGAAAATAAGAATCATGTTGAAAAAGAGAAATCAGTTGAAAATCAATTTGCATATGTTGCACACAAAAAATTTGCATACTACATTGATAGGTGCTCGGTTGCATACTCACACAACATTGATCCCAAAGAGTACAATGCATAGAAATACACAGTTGAAACATTTGAAATTGCATAGAATAACATTTTTGGTCACTACATTGACGACAATCACACATAGAAAGTTGAAGATGAATACATTGAGACAGTTGACTAGAACGACTAGTCGATTGCAGAGAATAAGAAGTAAACACTTGAAAATAATGATCACGTTGAAAAGTAGTTTGATGCACACGAAAATCAGACAGATACAGTTGAAAATCAATTTGAAGAAAATCTTGAACACATTGACACCTATTCACACACAGCAGACAAATTTGAGAATCTTGAAATTGCAGAGAATAATTAGTACATTGCATAAAAACAGTACATTGCCGAGACATACTTTGTGCTCTTTGACAATCCATCACAGAACACAGTTTCGGCTAGAAGTCTTGAGACAGTTGAAAATCTTGAAAAAGCACATGATCCGAATATTGACCATGCACTTGCATACTACATTGACCATGCCACACTTGCATCGAATTACACAGTTGATGACCTTGAACAAACAGACACAGTTGACCATGCCAATCAATTTGAGAATCTTGAAATTGCTCGCTCGGTTGATAATGAGTACAAAGCCAAGTACATTGAAAAATACAATCAGAATCACATTGAAGCGACATATGCAGAGAATCACATTGACGCCAAAAATCAGAATCACATTGAAAATCAATTTGCATACTCGAATAAGAATCACATTTCTAATGATCACGCACAAACATCCAAGTAAACATAGAATGATCCAGTTTTTGGACACACACACATTGAGACAGTTGCGAATGCCACACTTGCACACACCGAAACACAATTTTTTGACCAGTAAAACGTTGAACTCATTCAGTATGACGCGATTGAAGTCTATCTTGAACTCGTTGACCCCAATCTTGCATTTCTTCTTGTTTCTCATGATCCATTTGACCATGCACACGACACATTTGCATATGTTGATTCCACATTTGCCAATCAATACACACCAGAAGATGCACACACAGTTGAACACACATCCGACAACAATCTTGCATACTACATTGCCGATGCACAATCAGTTGAAAATCAATTTGCCACAGACATTGCATACTACATTGACCAGTAAAACGTTGACCATGCACATAAAACATTTGCATATGTTGCAGCCAATAAACAGACATTTT
+```
+
+### STEP 3
+Now we need to convert this into ascii, I found a python mapping online and made a script to read from our `dna` file and print the ASCII mapping.
+
+```python
+mapping = {
+        
+'AAA':'a',
+'AAC':'b',
+'AAG':'c',
+'AAT':'d',
+'ACA':'e',
+'ACC':'f', 
+'ACG':'g',
+'ACT':'h',
+'AGA':'i',
+'AGC':'j',
+'AGG':'k',
+'AGT':'l',
+'ATA':'m',
+'ATC':'n',
+'ATG':'o',
+'ATT':'p',
+'CAA':'q',
+'CAC':'r',
+'CAG':'s',
+'CAT':'t',
+'CCA':'u',
+'CCC':'v',
+'CCG':'w',
+'CCT':'x',
+'CGA':'y',
+'CGC':'z',
+'CGG':'A',
+'CGT':'B',
+'CTA':'C',
+'CTC':'D',
+'CTG':'E',
+'CTT':'F',
+'GAA':'G',
+'GAC':'H',
+'GAG':'I',
+'GAT':'J',
+'GCA':'K',
+'GCC':'L',
+'GCG':'M',
+'GCT':'N',
+'GGA':'O',
+'GGC':'P',
+'GGG':'Q',
+'GGT':'R',
+'GTA':'S',
+'GTC':'T',
+'GTG':'U',
+'GTT':'V',
+'TAA':'W',
+'TAC':'X',
+'TAG':'Y',
+'TAT':'Z',
+'TCA':'1',
+'TCC':'2',
+'TCG':'3',
+'TCT':'4',
+'TGA':'5',
+'TGC':'6',
+'TGG':'7',
+'TGT':'8',
+'TTA':'9',
+'TTC':'0',
+'TTG':' ',
+'TTT':'.'
+
+	
+	
+}
+
+string=""
+
+with open("dna","r") as f:
+	string=f.readline()
+
+def decode_dna( string ):
+
+    pieces = []
+    for i in range( 0, len(string), 3 ):
+        piece =  string[i:i+3]
+        ## X64MAYHEM
+        pieces.append( mapping[piece] )
+
+    return "".join(pieces)
+
+  
+print (decode_dna(string))
+```
+
+This gave us the following : 
+
+> In biology a gene is a sequence of nucleotides in DNA or RNA that encodes the synthesis of a gene product either RNA or protein. During gene expression the DNA is first copied into RNA. The RNA can be directly functional or be the intermediate template for a protein that performs a function.The genetic code is the set of rules used by living cells to translate information encoded within genetic material into proteins. Translation is accomplished by the ribosome which links amino acids in an order specified by messenger RNA using transfer RNA molecules to carry amino acids and to read the mRNA three nucleotides at a time. The genetic code is highly similar among all organisms and can be expressed in a simple table with 64 entries.ACGT is an acronym for the four types of bases found in a DNA molecule adenine cytosine guanine and thymine.Congratulations. Here is your reward. ***flag b10logy c4n b3 fun t00 .Dont forget to put underscores between the words and use the flag format to sumbit.***
+
+### FLAG
+
+**pCTF{b10logy_c4n_b3_fun_t00}**
+
+#### NOTE 
+ALL THE CODE AND DATA IS UNDER [\_docs](./_docs)  FOLDER
