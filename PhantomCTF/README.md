@@ -42,6 +42,7 @@
 
 - Reverse
   - [secret](./Reverse/secret) [x64mayhem]
+  - [segmentation fault](./Reverse/segmentationFault) [x64mayhem] 
   
 - Web
   - [Base64](./Web/Base64) [AviusX]
