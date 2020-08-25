@@ -39,6 +39,11 @@
   - [$root](./OSINT/$root) [AviusX]
   - [Toolkit](./OSINT/Toolkit) [AviusX]
   - [AcharyaDev](./OSINT/AcharyaDev) [AviusX]
+  
+- PWN
+  - [Enterance - Bank Heist](./Pwn/Enterance-BankHeist) [x64mayhem]
+  - [Locker - Bank Heist](./Pwn/Locker-BankHeist) [x64mayhem]
+  - [We are in the Endgame now](./Pwn/We-are-in-the-Endgame-Now) [x64mayhem]
 
 - Reverse
   - [secret](./Reverse/secret) [x64mayhem]
