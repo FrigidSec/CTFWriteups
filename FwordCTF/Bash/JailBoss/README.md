@@ -1,5 +1,5 @@
 ### Jailboss
-###### Description: Fwordtasks.sh is in the same directory as you. Maybe it will help you.
+###### Description: Fwordtask.sh is in the same directory as you. Maybe it will help you.
 
 ---
 In this challenge, we had to SSH into a box that had a very restrictive shell. We had to make use of that and get the flag.
