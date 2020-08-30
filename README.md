@@ -1,13 +1,13 @@
 
 ![](https://raw.githubusercontent.com/FrigidSec/Documents/master/Graphics/Logo/webbanner_728x90px.png)
 # CTFWriteUps
-Writeups of CTF challanges we have solved over time.
+Writeups of CTF challenges we have solved over time.
 
 ---
 
 ### CTFs
-1. [Arab Security Cyber WarGames 2020](./ASCWG/) 
-2. [Samsung CTF 2020](./SCTF/)
+1. [Arab Security Cyber WarGames 2020](./ASCWG) 
+2. [Samsung CTF 2020](./SCTF)
 3. [Phantom CTF 2020](./PhantomCTF)
 4. [FwordCTF 2020](./FwordCTF)
 
@@ -17,7 +17,7 @@ Writeups of CTF challanges we have solved over time.
 If you are not able to decide what to read first, here are some of the `noice` writeups which might be interesting to you.
 
 - Reverse Engineering
-  - [Vault101 | SCTF, Android Reverse Engineering](https://github.com/FrigidSec/CTFWriteups/tree/master/SCTF/Vault101) [x64Mayhem]
+  - [Vault101 | SCTF, Android Reverse Engineering](./SCTF/Vault101) [x64Mayhem]
 - Boot2Root/CrackTheBox
   - [Aincrad: Foothold | PhantomCTF](./PhantomCTF/Boot2Root/Aincrad:%20Foothold) [AviusX]
 - Forensics
