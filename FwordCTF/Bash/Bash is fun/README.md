@@ -65,7 +65,7 @@ The resulting string would become:
 eval "function  myfunc { cat flag.txt; }; myfunc; { sed 's/user/${username}/g' welcome.txt ; }"
 ```
 
-This will create a function that cats flag.txt and execute the function right after.
+This will create a function that cats flag.txt and will execute the function right after.
 Running this, we get the following output:
 
 ![](./images/ss3.png) 
