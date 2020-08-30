@@ -11,7 +11,7 @@ There are 3 interesting looking files. `welcome.txt` only had the following cont
 Welcome to Fword Island Mr user ! You have nothing to do here
 ```
 This isn't relevant to getting the flag. Now we're left with `welcome.sh` and `flag.txt`, which we have to obtain.
-running a `sudo -l`, I saw that `user1` (us) has the permissions to execute `welcome.sh` as `user-privileged`.
+Running a `sudo -l`, I saw that `user1` (us) has the permissions to execute `welcome.sh` as `user-privileged`.
 
 ![](./images/ss2.png) 
 
