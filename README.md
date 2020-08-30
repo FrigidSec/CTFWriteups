@@ -14,7 +14,7 @@ Writeups of CTF challanges we have solved over time.
 ---
 
 ### Interesting Writeups
-If you are not able to think what to read first, here are some of the `noice` writeups which might be interesting to you.
+If you are not able to decide what to read first, here are some of the `noice` writeups which might be interesting to you.
 
 - Reverse Engineering
   - [Vault101 | SCTF, Android Reverse Engineering](https://github.com/FrigidSec/CTFWriteups/tree/master/SCTF/Vault101) [x64Mayhem]
