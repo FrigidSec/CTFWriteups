@@ -9,7 +9,7 @@ Writeups of CTF challenges we have solved over time.
 1. [Arab Security Cyber WarGames 2020](./ASCWG) 
 2. [Samsung CTF 2020](./SCTF)
 3. [Phantom CTF 2020](./PhantomCTF)
-4. [RESTCON CTF 2020](./RESTCON%20CTF)
+4. [RESTCON CTF 2020](./RESTCON)
 5. [FwordCTF 2020](./FwordCTF)
 
 ---
