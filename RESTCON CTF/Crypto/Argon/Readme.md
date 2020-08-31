@@ -1,4 +1,4 @@
-**Challenge Description**
+# Argon
 
 ![](./Images/ArgonCrypto.png)
 
