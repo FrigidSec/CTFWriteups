@@ -18,7 +18,7 @@ After going through the website,I didn't find anything interesting..so I jumped 
 I can't paste that cipher over here as it was very much long.It starts with something like this **LVstLS0tLS0tPis8XT4rLisrKysrKysrLi0tLS0tLS4tLS0tLi0uK1srKz4tLS0tLTxdPisuKysrK......**
 
 This cipher includes series of different cipher decrytptions..
-**Base64 -> BrainFuck -> Base32 -> Base64 -> BrainFuck **
+**Base64 -> BrainFuck -> Base32 -> Base64 -> BrainFuck**
 
 Finally you will get something like this : **QDRSBNM{j33O^^G4bj!mF_jDDDDDo_rlHKdddmF}** It looks like we need to rotate it ..
 After rotating for 27 rounds we will get our Flag!
