@@ -22,8 +22,4 @@ Now we were left with the **cctv.jpeg**, ran **steghide** without passphrase to 
 **pCTF{cL4rk_1v4N_<3_$}**
 
 
-As we knew the Flag format **pCTF{}** so we just used **strings utility** to just dump all the strings present then piped it with **grep**to find the particular Flag format. This was just enough to get the flag out of that pcap file.
-
-
-**pCTF{sh4rk_1n_th3_w1r3}**
 
