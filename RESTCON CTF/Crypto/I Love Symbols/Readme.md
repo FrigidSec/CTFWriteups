@@ -10,4 +10,4 @@ I got this **52455354434f4e_7b_5930555f4431445f544831537d** after decoding it. I
 
 I just used an online tool(https://www.boxentriq.com/code-breaking/hex-analysis) to Convert it to **ASCII** and got the Flag :).
 
-![ ](./symbols.png)
+![ ](./images/Symbols.png)
