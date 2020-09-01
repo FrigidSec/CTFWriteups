@@ -20,4 +20,4 @@ Okay now we are left with the first two images.So we started searching for the v
 
 After getting success with the **GOOGLE LENS** there's no way to switch the methodology for the first image!! LOL! So we began our final hunt..we searched through many posts but didn't got the results we expected! During this hunt we were trying all the options of **GOOGLE LENS** we got to know about one option in which we can upload the image with some **cropping** so we tried that!! After going through some searches we came across a image which looked same but it was from different angle!! Finally we got the village : **Llanfairpwllgwyngyll in Wales** pretty weird village name! Anyways we got our flag!!
 
-**FwordCTF{llanfairpwllgwyngyll_monsanto_chefchaouen}
+**FwordCTF{llanfairpwllgwyngyll_monsanto_chefchaouen}**
