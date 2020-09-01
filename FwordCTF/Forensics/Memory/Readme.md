@@ -23,7 +23,7 @@ So we got the <USER>: **SB_AK** and <PASSWORD>:**password123**
   
  Now we have to find the computer name. There are 2 approaches for finding the Computer Name, the second approach I discovered after the CTF got over !
  
- ** 1st Approach**
+ **1st Approach**
  
  After researching some time we got to know that we can find it through registry keys! So first dump the registry keys using **hivelist** plugin!
  
