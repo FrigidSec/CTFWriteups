@@ -6,3 +6,7 @@
   
 - OSINT
   - [Identity Fraud](./OSINT/Identity%20Fraud) [AviusX]
+  
+- Crypto
+
+  - [One_Part!](./Crypto/One_Part!) [Mr.Pr!M3]
