@@ -7,6 +7,8 @@
 - OSINT
   - [Identity Fraud](./OSINT/Identity%20Fraud) [AviusX]
   
+  - [Tracking a Criminal](./Tracking_a_Criminal) [Mr.Pr!M3] [AviusX]
+  
 - Crypto
 
   - [One_Part!](./Crypto/One_Part!) [Mr.Pr!M3]
