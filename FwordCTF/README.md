@@ -12,3 +12,11 @@
 - Crypto
 
   - [One_Part!](./Crypto/One_Part!) [Mr.Pr!M3]
+
+- Forensics
+
+  - [Memory](./Forensics/Memory) [Mr.Pr!M3]
+  
+  - [Memory2](./Forensics/Memory2) [Mr.Pr!M3]
+  
+  - [Memory3](./Forensics/Memory3) [Mr.Pr!M3]
